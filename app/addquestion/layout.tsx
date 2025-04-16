@@ -1,15 +1,15 @@
-import { Metadata } from "next";
-import Addquestion from "./page";
+import { Metadata } from 'next';
+import Addquestion from './page';
 
 export const metadata: Metadata = {
-    title: "Would You Rather | Add Question",
-    description: "A simple game of would you rather",
-  };
+    title: "Would You Rather | Add Dilemma",
+    description: "Add your personal 'Would You Rather' Dilemma ",
+};
 
-function layout(){
-    return (
-        <Addquestion />
-    )
+function AddQuestionLayout() {
+  return (
+    <Addquestion></Addquestion>
+  )
 }
 
-export default layout
+export default AddQuestionLayout
