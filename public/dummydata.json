@@ -1,0 +1,10 @@
+{
+    "redQuestion": {
+        "title": "Être un chien",
+        "percentage": 41
+    },
+    "blueQuestion": {
+        "title": "Être un chat",
+        "percentage": 21
+    }
+}
