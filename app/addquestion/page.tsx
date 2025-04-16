@@ -1,6 +1,9 @@
+"use client"
+
+
 function Addquestion() {
   return (
-    <div>page</div>
+    <div>sdadas</div>
   )
 }
 
