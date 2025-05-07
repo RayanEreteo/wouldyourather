@@ -15,7 +15,7 @@ function Addquestion() {
 
   const [loading, setLoading] = useState(false);
 
-  const [data, setData] = useState<data>({})
+  const [data, setData] = useState<data>({});
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
