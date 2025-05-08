@@ -41,6 +41,7 @@ function Addquestion() {
       setData(data);
     } catch (error) {
       console.error("Error submitting dilemma: Could not connect to server", error);
+      setData({ success: false, message: "Could not connect to server" });
     } finally {
       setLoading(false);
     }
