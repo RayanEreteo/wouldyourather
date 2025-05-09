@@ -1,16 +1,20 @@
-import fs from "fs"
-import path from "path";
+
 import DilemmaHome from "./components/DilemmaHome";
 
-export default function Home() {
-  const filePath = path.join(process.cwd(), "/public/dummydata.json")
-  const fileData = fs.readFileSync(filePath, "utf8")
-  const data = JSON.parse(fileData)
+export default async function Home() {  
+  let baseData;
 
-  console.log(data);
-  
+  try {
+    const res = await fetch("http://localhost:8000/getDilemma")
+    const data = await res.json()
+    baseData = data
+    console.log(data)
+  } catch (error) {
+    console.error("Error fetching data:", error);
+  }
+
 
   return (
-    <DilemmaHome baseData={data}/>
+    <DilemmaHome baseData={baseData}/>
   );
 }
