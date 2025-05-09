@@ -59,7 +59,7 @@ function Addquestion() {
             <button disabled={loading} type="submit" className="text-white font-bold bg-cyan-500 rounded p-4 hover:cursor-pointer disabled:bg-black disabled:cursor-not-allowed">Add Dilemma</button>
           </form>
         </div>
-        {Object.keys(data).length > 0 && <div className="response-box bg-green-400 w-screen text-center mt-6 p-4 rounded">
+        {Object.keys(data).length > 0 && <div className={`response-box ${data.success ? "bg-green-400" : "bg-red-400"} w-screen text-center mt-6 p-4 rounded`}>
            <p className="text-white font-bold">{data.message}</p>
         </div>}
       </div>
