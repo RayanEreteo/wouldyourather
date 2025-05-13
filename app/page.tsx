@@ -13,7 +13,6 @@ export default async function Home() {
     console.error("Error fetching data:", error);
   }
 
-
   return (
     <DilemmaHome baseData={baseData}/>
   );
