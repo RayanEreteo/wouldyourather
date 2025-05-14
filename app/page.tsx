@@ -1,7 +1,7 @@
 
 import DilemmaHome from "./components/DilemmaHome";
 
-export default async function Home() {  
+export default async function Home() { 
   let baseData;
 
   try {
