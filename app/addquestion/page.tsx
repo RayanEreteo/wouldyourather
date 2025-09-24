@@ -15,7 +15,6 @@ function Addquestion() {
   const blueRef = useRef<HTMLInputElement>(null);
 
   const [loading, setLoading] = useState(false);
-
   const [data, setData] = useState<data>({});
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
